@@ -53,7 +53,7 @@ switch (number) {
 
 // 3.Запросить у пользователя трехзначное число и проверить, есть ли в нем одинаковые цифры.
 
-const number = +prompt("Введите трехзначное число");
+const number = prompt("Введите трехзначное число");
 if (
   number[0] == number[1] ||
   number[0] == number[2] ||
@@ -78,8 +78,8 @@ else alert(`Не палиндромом`);
 // 6.Написать конвертор валют. Пользователь вводит количество USD, выбирает, в какую валюту хочет перевести EUR, UAN или AZN, и получает в ответ соответствующую сумму.
 
 const amount = prompt("Введите количество USD:");
-const ExchangeRates = prompt("EUR = 1, UAH = 2, AZN = 3");
-switch (ExchangeRates) {
+const exchangeRates = prompt("EUR = 1, UAH = 2, AZN = 3");
+switch (exchangeRates) {
   case "1":
     alert(`EUR: ${amount * 0.82}`);
     break;
@@ -103,9 +103,9 @@ else if (amount >= 500) alert(`Со скидкой 7% = ${(amount / 100) * 93}`)
 
 // 8.Запросить у пользователя длину окружности и периметр квадрата. Определить, может ли такая окружность поместиться в указанный квадрат.
 
-const x = prompt("Введите длину окружности :");
-const y = prompt("Введите периметр квадрата :");
-if (x / 3.14 <= y / 4) {
+const circumference = prompt("Введите длину окружности :");
+const perimeterSquare = prompt("Введите периметр квадрата :");
+if (circumference / 3.14 <= perimeterSquare / 4) {
   alert("Ета окружность поместится в квадрат");
 } else {
   alert("Ета окружность не поместится в квадрат");
@@ -118,17 +118,17 @@ const javascript = +prompt(
   "Что такое javascript? \n1.Мультипарадигменный язык программирования.\n2.Полное название Java.\n3.Формальный язык описания внешнего вида документа."
 );
 const variable = +prompt(
-  "Для создания переменной в JavaScript используйте ключевое слово : \n1.let \n2.const \n3.if"
+  "Для создания переменной в JavaScript (которую можно изменить) используйте ключевое слово : \n1.let \n2.const \n3.if"
 );
 const data_types = +prompt(
-  "Что не относиться к Типам данных: \n1.Boolean \n2.Null \n3.Object"
+  "Что не относиться к Типам данных: \n1.Boolean \n2.Null \n3.Const"
 );
-let balls = 0;
-if (javascript == 1) balls = +2;
-if (variable == 1) balls = +2;
-if (data_types == 3) balls = +2;
+let point = 0;
+if (javascript == 1) point += 2;
+if (variable == 1) point += 2;
+if (data_types == 3) point += 2;
 {
-  alert(`Your score is :${balls}`);
+  alert(`Your score is :${point}`);
 }
 
 // 10.Запросить дату (день, месяц, год) и вывести следующую за ней дату. Учтите возможность перехода на следующий месяц, год, а также високосный год.
