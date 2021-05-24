@@ -1,7 +1,7 @@
 //1.Подсчитать сумму всех чисел в заданном пользователем диапазоне.
 
-let firstNumber = prompt("Введите пожалуйста первое число:");
-let secondNumber = prompt("Введите пожалуйста Второе число:");
+let firstNumber = +prompt("Введите пожалуйста первое число:");
+let secondNumber = +prompt("Введите пожалуйста Второе число:");
 let sum = 0;
 for (i = firstNumber; i <= secondNumber; i++) {
   sum += firstNumber++;
@@ -12,14 +12,9 @@ alert(`Ваш ответ: ${sum}`);
 
 let firstNumber = prompt("Введите пожалуйста первое число:");
 let secondNumber = prompt("Введите пожалуйста Второе число:");
-let constant = 0;
+const min = Math.min(firstNumber, secondNumber);
 
-if (secondNumber > firstNumber) {
-  constant = secondNumber;
-} else {
-  constant = firstNumber;
-}
-for (i = constant; i >= 1; i--) {
+for (i = min; i >= 1; i--) {
   if (secondNumber % i == 0 && firstNumber % i == 0) {
     alert(`Наибольший общий делитель: ${i}`);
     break;
@@ -62,11 +57,11 @@ for (i = 0; i < 10; i++) {
   number = prompt(
     "Введите пожалуйста 10 чисел(да ето долго,но я сам чуть мозг не сломал)"
   );
-  if (number == 0) zeros++;
+  if (number === 0) zeros++;
   if (number > 0) positive++;
   if (number < 0) negative++;
-  if (number % 2 != 0 || number != 0) notEven++;
-  if (number % 2 == 0 || number != 0) even++;
+  if (number % 2 !== 0) notEven++;
+  if (number % 2 === 0) even++;
 }
 alert(
   `Положительных: ${positive}\nОтрицательных: ${negative}\nНулей: ${zeros}\nЧетных: ${even}\nНечетных: ${notEven}`
