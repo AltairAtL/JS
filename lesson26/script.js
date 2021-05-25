@@ -9,10 +9,10 @@ const myCar = {
   speed: 100,
 };
 function allData() {
-  car.manuf, car.model, car.year, car.speed;
+  myCar.manuf, myCar.model, myCar.year, myCar.speed;
 }
 function time(s) {
-  let t = s / car.speed;
+  let t = s / myCar.speed;
   if (t > 4) {
     let relax = parseInt(t / 4);
     t = t + relax;
