@@ -483,6 +483,9 @@ li.container__li img {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 58%;
+          flex: 0 0 58%;
   margin-left: 40px;
   -ms-flex-line-pack: start;
       align-content: flex-start;
@@ -517,6 +520,9 @@ li.container__li img {
 }
 
 .container__rating {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
   margin-left: 12px;
 }
 
