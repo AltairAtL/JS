@@ -1,0 +1,28 @@
+html,
+body {
+  margin: 0;
+  padding-top: 150px;
+}
+.content__text {
+  display: block;
+  position: relative;
+  width: 400px;
+  margin: auto;
+  text-align: justify;
+  padding: 5px;
+  border: 4px dashed rgb(81, 255, 0);
+  margin-bottom: 10px;
+}
+.content__text--resizer {
+  display: block;
+  position: absolute;
+  right: -10px;
+  bottom: -10px;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: rgb(3, 250, 15);
+  border: 3px dashed rgb(255, 0, 0);
+  cursor: zoom-in;
+}
