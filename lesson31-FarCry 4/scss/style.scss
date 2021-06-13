@@ -1,0 +1,177 @@
+@import "normalize";
+@import "fonts";
+
+body {
+  padding-top: 170px;
+  min-height: 100%;
+  height: 100%;
+  background: url("../img/BG\ 1.png") no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: column wrap;
+  //   flex-flow: column wrap; Читая про флексы открыл для себя сокращения flex-flow: <'flex-direction'> and <'flex-wrap'>
+  justify-content: center;
+  align-items: center;
+  font-family: $lato;
+}
+.content {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  width: 600px;
+  height: 492px;
+  box-shadow: 0 0 50px rgb(10, 10, 10);
+}
+.container {
+  width: 600px;
+  height: 377px;
+  background-color: #212434;
+}
+.container__content {
+  padding: 42px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.container__header {
+  background-color: #2b2f3f;
+  width: 600px;
+  height: 115px;
+}
+.container__header nav {
+  height: 100%;
+}
+.container__ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  height: 100%;
+  justify-content: space-around;
+}
+li.container__li {
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.container__li p:hover {
+  border-bottom: 3px solid white;
+  padding-bottom: 10px;
+  opacity: 1;
+}
+
+.disable {
+  opacity: 0.3;
+}
+
+li.container__li img {
+  margin-bottom: 14px;
+}
+.container__progress {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  margin-left: 250px;
+  border-radius: 50%;
+  border: 3px solid #13e28d;
+  border-left-color: transparent;
+  transform: rotate(45deg);
+}
+
+.container__progress p {
+  font-family: $lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #aaadbb;
+  text-align: center;
+  transform: rotate(-45deg);
+}
+.container__descr {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 0 0 58%;
+  margin-left: 40px;
+  align-content: flex-start;
+  color: #fff;
+}
+.container__img {
+  flex: 0 0 30%;
+}
+.container__title h2 {
+  margin: 0px 135px 8px 0px;
+  font-size: 32px;
+}
+.container__subtitle {
+  margin-bottom: 15px;
+}
+.container__subtitle h3 {
+  margin: 0px 0px 10px 0px;
+  font-size: 14px;
+}
+.container__p {
+  margin: 0;
+  line-height: 22px;
+  text-align: justify;
+  color: #b7bacd;
+}
+.container__rating {
+  flex: 0 0 40%;
+  margin-left: 12px;
+}
+span {
+  cursor: pointer;
+}
+span + span {
+  margin-left: 6px;
+}
+.container__price {
+  flex: 0 0 22%;
+  margin-left: 200px;
+  margin-top: -20px;
+}
+.container__priceoff {
+  margin-bottom: 4px;
+  font-family: $lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #fedc3f;
+}
+.container__total {
+  font-size: 32px;
+  color: #fff;
+}
+.container__buyitnow {
+  margin-top: -20px;
+  justify-self: flex-end;
+  width: 165px;
+  height: 55px;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #13e28d;
+  cursor: pointer;
+}
+.container__buyitnow:hover,
+.container__buyitnow:focus {
+  background-color: #ade4cd;
+}
+.rating,
+.wheretobuy {
+  background-color: #212534;
+  position: absolute;
+  width: 480px;
+  height: 257px;
+  padding: 60px;
+  line-height: 22px;
+  color: #fff;
+  top: 115px;
+  left: 0;
+  display: none;
+}
