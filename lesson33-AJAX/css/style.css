@@ -1,0 +1,82 @@
+body {
+  background: url("/img/background.jpg") center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+.heading {
+  text-transform: uppercase;
+  font-family: "blood_crowregular";
+  text-align: center;
+  font-size: 30px;
+  margin-top: 50px;
+  color: brown;
+  text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85,
+    -20px -20px 40px #f61919, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606,
+    0 -80px 70px #973716, 10px -90px 80px #451b0e;
+}
+.search_box {
+  text-align: center;
+}
+.search_button {
+  text-align: center;
+}
+label {
+  text-transform: uppercase;
+  font-family: "blood_crowregular";
+  font-size: 25px;
+}
+.title {
+  margin-top: 100px;
+}
+.year {
+  margin-top: 30px;
+}
+input {
+  margin-left: 20px;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #740102;
+  width: 320px;
+  height: 40px;
+}
+input:focus {
+  border-left: 4px solid #740102;
+  box-shadow: 0 0 30px #ff0004;
+}
+
+::placeholder {
+  padding-left: 8px;
+  font-family: "blood_crowregular";
+}
+.search_button button {
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 139px;
+  height: 52px;
+  border: 0;
+  cursor: pointer;
+  font-family: "blood_crowregular";
+  font-size: 30px;
+  color: brown;
+  background-color: rgba(0, 0, 0, 0.794);
+}
+.search_button button:hover {
+  color: red;
+  box-shadow: 0 0 20px #ff0106;
+}
+h2 {
+  margin-top: 50px;
+  color: #332626;
+  letter-spacing: 10px;
+  text-align: center;
+  font-size: 40px;
+  font-family: "blood_crowregular";
+}
+.blood img {
+  position: fixed;
+  left: 5%;
+  width: 500px;
+  height: 100%;
+}
+/* Кровь я спецом наложил слоем сверху чтобы перекривало результат поиска */
