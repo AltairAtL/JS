@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "blood_crowregular";
+  src: url("../fonts/bloodcrow-webfont.eot");
+  src: url("../fonts/bloodcrow-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/bloodcrow-webfont.woff2") format("woff2"),
+    url("../fonts/bloodcrow-webfont.woff") format("woff"),
+    url("../fonts/bloodcrow-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

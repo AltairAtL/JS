@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lesson33-AJAX</title>
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 blood">
+          <img src="/img/blood.png" alt="" />
+        </div>
+        <div class="col-12 heading"><h1>Bloody movie search</h1></div>
+        <div class="col-12 search_box title">
+          <label class="sr-only" for="title">Movie Title:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            placeholder="Movie Title..."
+          />
+        </div>
+        <div class="col-12 search_box year">
+          <label class="sr-only" for="year">Enter Year:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="year"
+            placeholder="Enter Year..."
+          />
+        </div>
+        <div class="col-12 search_button">
+          <button class="btn btn-default" id="omdb_submit">Search</button>
+        </div>
+        <div class="col-12">
+          <h2 class="pretty_movie_output">Search results</h2>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
